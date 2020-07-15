@@ -1,0 +1,50 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.txt {
+    color: white;
+    background: black;
+
+    font-size: 3.5rem;
+    text-transform: uppercase;  
+}
+.txt::before {
+    content: 'So You Need Some CSS Ideas?';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+}
+.homePage__wrapper {
+    display: inline-flex;
+    filter: brightness(200%);
+    overflow: hidden;
+}
+.gradient {
+    background: linear-gradient(109.36632076745343deg, rgba(73, 101, 242,1) 10.345052083333332%,rgba(73, 100, 241,1) 10.345052083333332%,rgba(158, 0, 236,1) 88.73046874999999%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+.dodge {
+    background: radial-gradient(circle, white, black 35%) center / 25% 25%;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 3s linear infinite;
+}
+
+@keyframes dodge-area {
+    to {
+        transform: translate( 50%, 50%);
+    }
+}
