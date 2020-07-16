@@ -19,14 +19,131 @@
 
         <nav>
             <ul>
-                <a href="transitions.html"><li>Transitions</li></a>
-                <a href="animations.html"><li>Animations</li></a>
-                <a href="flexBox.html"><li class="current">Flex Box</li></a>
+                <a href="transitions.html">
+                    <li>Transitions</li>
+                </a>
+                <a href="animations.html">
+                    <li>Animations</li>
+                </a>
+                <a href="flexBox.html">
+                    <li class="current">Flex Box</li>
+                </a>
             </ul>
         </nav>
     </header>
 
     <!-- FlexBox Content -->
+    <section class="flexBoxPage">
+        <h2>Flex Box</h2>
+
+        <div class="container">
+            <!-- Flex vs Block -->
+            <div class="flexBlock__section">
+                
+                <section class="flexBlock">
+                    <h3>Display: Block</h3>
+
+                    <div class="block">
+                        <div class="cards">1</div>
+                        <div class="cards">2</div>
+                        <div class="cards">3</div>
+                    </div>
+                </section>
+                <section class="flexBlock">
+                    <h3>Display: Flex</h3>
+
+                    <div class="flex flexCenter">
+                        <div class="cards">1</div>
+                        <div class="cards">2</div>
+                        <div class="cards">3</div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Justify-Content -->
+            <div class="justifyContent__section">
+                <section class="justifyContent">
+                    <h3>Justify-content: center</h3>
+
+                    <div class="JC-center flex">
+                        <div class="cards">1</div>
+                        <div class="cards">2</div>
+                        <div class="cards">3</div>
+                    </div>
+                </section>
+                <section class="justifyContent">
+                    <h3>Justify-content: space-around</h3>
+
+                    <div class="JC-around flex">
+                        <div class="cards">1</div>
+                        <div class="cards">2</div>
+                        <div class="cards">3</div>
+                    </div>
+                </section>
+                <section class="justifyContent">
+                    <h3>Justify-content: space-evenly</h3>
+
+                    <div class="JC-evenly flex">
+                        <div class="cards">1</div>
+                        <div class="cards">2</div>
+                        <div class="cards">3</div>
+                    </div>
+                </section>
+                <section class="justifyContent">
+                    <h3>Justify-content: space-between</h3>
+
+                    <div class="JC-between flex">
+                        <div class="cards">1</div>
+                        <div class="cards">2</div>
+                        <div class="cards">3</div>
+                    </div>
+                </section>
+                <section class="justifyContent">
+                    <h3>Justify-content: flex-start</h3>
+
+                    <div class="JC-start flex">
+                        <div class="cards">1</div>
+                        <div class="cards">2</div>
+                        <div class="cards">3</div>
+                    </div>
+                </section>
+                <section class="justifyContent">
+                    <h3>Justify-content: flex-end</h3>
+
+                    <div class="JC-end flex">
+                        <div class="cards">1</div>
+                        <div class="cards">2</div>
+                        <div class="cards">3</div>
+                    </div>
+                </section>
+                <section class="justifyContent">
+                    <p>The align-items property works similar to the justify-content property except it adjusts on the y-axis as opposed to the x-axis.</p>
+                </section>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- <script>
+        const blockButton = document.querySelector(".blockButton");
+        const flexButton = document.querySelector(".flexButton");
+        const section1 = document.querySelector(".section1");
+
+        blockButton.addEventListener('click', () => {
+            section1.classList.add("section1__block")
+            section1.classList.remove("section1__flexed")
+        })
+
+        flexButton.addEventListener('click', () => {
+            section1.classList.add("section1__flexed")
+            section1.classList.remove("section1__block")
+        })
+    </script> -->
 </body>
 
 </html>

@@ -1,81 +1,87 @@
 h2 {
-    position: relative;
     padding: 9% 0 3% 0; 
     margin: 0;
     text-align: center;
     font-size: 2rem;
 }
-
 .container {
+    margin: 2% 0 0 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.section1__container {
-    width: 90%;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.section1 {
+/* Flex vs Block Styles */
+.flexBlock__section,
+.justifyContent__section {
     display: flex;
     width: 100%;
-    height: 100vh;
-    background: beige;
-    flex-direction: column;
+    justify-content: space-around;
+    margin: 2% 0;
+    flex-wrap: wrap;
 }
-.cards {
+.flexBlock {
+    width: 25%;
+    height: 40vh;
     background: blueviolet;
+    border-radius: 30px;
     margin: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 20%;
 }
-/* section {
-    width: 100%;
-    height: 45vh;
-    margin-top: 1%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    background: beige;
-} */
-
-button {
-    height: 30px;
-    width: 120px;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    background: blueviolet;
-    cursor: pointer;
-    outline: none;
-    margin-bottom: 1%;
+.flexBlock h3,
+.justifyContent h3 {
+    text-align: center;
+    font-weight: lighter;
 }
-button:hover {
-    background: rgb(127, 49, 201);
-}
-
-
-/* .section1__block {
-   flex-direction: column;
-}
-.section1__flexed {
-    flex-direction: row;
-}  */
-/* .cards {
-    width: 30%;
-    height: 25%;
-    background: blueviolet;
+.flexBlock .cards,
+.justifyContent .cards {
+    width: 70px;
+    height: 70px;
+    background: black;
     margin: 1%;
+    padding: 4px;
+    text-align: center;
+}
+.flex {
     display: flex;
+}
+.flexCenter {
     justify-content: center;
-    align-items: center;
-} */
+}
+.block {
+    position: relative;
+    left: 42%;
+}
 
+
+/* Justify Content Styles */
+.justifyContent {
+    width: 25%;
+    height: 20vh;
+    background: blueviolet;
+    border-radius: 30px;
+    margin: 1%;
+}
+.justifyContent h3 {
+    font-size: 1rem;
+}
+.justifyContent p {
+    text-align: center;
+    margin: 4% 2%;
+}
+.JC-center {
+    justify-content: center;
+}
+.JC-around {
+    justify-content: space-around;
+}
+.JC-evenly {
+    justify-content: space-evenly;
+}
+.JC-between {
+    justify-content: space-between;
+}
+.JC-end {
+    justify-content: flex-end;
+}
