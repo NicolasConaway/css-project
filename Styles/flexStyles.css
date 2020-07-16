@@ -1,0 +1,81 @@
+h2 {
+    position: relative;
+    padding: 9% 0 3% 0; 
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section1__container {
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: beige;
+    flex-direction: column;
+}
+.cards {
+    background: blueviolet;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 20%;
+}
+/* section {
+    width: 100%;
+    height: 45vh;
+    margin-top: 1%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background: beige;
+} */
+
+button {
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: blueviolet;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 1%;
+}
+button:hover {
+    background: rgb(127, 49, 201);
+}
+
+
+/* .section1__block {
+   flex-direction: column;
+}
+.section1__flexed {
+    flex-direction: row;
+}  */
+/* .cards {
+    width: 30%;
+    height: 25%;
+    background: blueviolet;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
