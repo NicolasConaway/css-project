@@ -87,3 +87,9 @@ h2 {
 .JC-end {
     justify-content: flex-end;
 }
+
+@media (max-width: 1380px) {
+    .block {
+        left: 41%
+    }
+}
