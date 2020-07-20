@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="Styles/transitionStyles.css" />
     <title>Basic CSS Tips</title>
 </head>
 
@@ -19,10 +20,7 @@
         <nav>
             <ul>
                 <a href="transitions.html">
-                    <li class="current">Transitions</li>
-                </a>
-                <a href="animations.html">
-                    <li>Animations</li>
+                    <li class="current">Transitions & Animations</li>
                 </a>
                 <a href="flexBox.html">
                     <li>Flex Box</li>
@@ -30,6 +28,61 @@
             </ul>
         </nav>
     </header>
+
+    <section>
+        <h2>Transitions & Animations</h2>
+
+        <div class="container">
+
+            <section class="transition">
+                <h3>Card Flip</h3>
+
+                <div class="hoverBox">
+                    <div class="hoverBox-inner">
+                        <div class="hoverBox-front">
+                            <p>Hover Over Me</p>
+                        </div>
+                        <div class="hoverBox-back">
+                            <p>Hover Off Me</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="transition">
+                <h3>Card Expands</h3>
+                <div class="haverCards__container">
+                    <div>
+                        <div class="hoverCards" style="background-color:rgba(62, 52, 153,1);"></div>
+                        <div class="hoverCards" style="background-color:white;"></div>
+                        <div class="hoverCards" style="background-color:blueviolet;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="transition">
+                <h3>Color Shuffle</h3>
+                
+                <div>
+                    <div class="colorShuffle"></div>
+                </div>
+            </section>
+
+            <section class="transition">
+                <h3>Text Animation</h3>
+                
+                <div class="textContainer">
+                    <span class="text1">Hello</span>
+                    <span class="text2">World</span>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <script>
+
+    </script>
 </body>
 
 </html>

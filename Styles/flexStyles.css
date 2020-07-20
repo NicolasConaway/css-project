@@ -1,5 +1,5 @@
 h2 {
-    padding: 9% 0 3% 0; 
+    padding: 5% 0 3% 0; 
     margin: 0;
     text-align: center;
     font-size: 2rem;
@@ -15,27 +15,32 @@ h2 {
 
 /* Flex vs Block Styles */
 .flexBlock__section,
-.justifyContent__section {
+.justifyContent__section,
+.flexFlow__section {
     display: flex;
     width: 100%;
     justify-content: space-around;
     margin: 2% 0;
     flex-wrap: wrap;
 }
-.flexBlock {
+.flexBlock,
+.flexFlow {
     width: 25%;
     height: 40vh;
     background: blueviolet;
     border-radius: 30px;
     margin: 1%;
+    padding: 1%;
 }
 .flexBlock h3,
-.justifyContent h3 {
+.justifyContent h3,
+.flexFlow h3 {
     text-align: center;
     font-weight: lighter;
 }
 .flexBlock .cards,
-.justifyContent .cards {
+.justifyContent .cards,
+.flexFlow .cards {
     width: 70px;
     height: 70px;
     background: black;
@@ -46,9 +51,13 @@ h2 {
 }
 .flex {
     display: flex;
+    align-items: center;
 }
-.flexCenter {
+.flexCenter,
+.flow-row,
+.flow-column  {
     justify-content: center;
+    height: 80%;
 }
 .block {
     position: relative;
@@ -88,7 +97,27 @@ h2 {
     justify-content: flex-end;
 }
 
-@media (max-width: 1380px) {
+/* Flex Flow Styles */
+.flexFlow h3 {
+    font-size: 1rem;
+}
+.flow-row-reverse,
+.flow-column-reverse{
+    justify-content: center;
+    height: 75%;
+}
+
+.flow-row-reverse {
+    flex-direction: row-reverse;
+}
+.flow-column {
+    flex-direction: column;
+}
+.flow-column-reverse {
+    flex-direction: column-reverse;
+}
+
+@media (max-width: 1515px) {
     .block {
         left: 41%
     }

@@ -1,0 +1,140 @@
+h2 {
+    text-align: center;
+    padding: 5% 0 3% 0;
+    font-size: 2rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.transition {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+/* Card Flip Styles */
+.hoverBox {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  .hoverBox-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+  } 
+  .hoverBox:hover .hoverBox-inner {
+    transform: rotateX(180deg);
+  }
+  .hoverBox-front, .hoverBox-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .hoverBox-front {
+    background-color: rgba(62, 52, 153,1);
+    color: white;
+    border-radius: 20px;
+  }
+  .hoverBox-back {
+    background-color: blueviolet;
+    color: white;
+    transform: rotateX(180deg);
+    border-radius: 20px;
+  }
+   
+  /* Hover Cards Styles */
+   .hoverCards
+   {
+       display:inline-block;
+       border:0;
+       width:196px;
+       height:210px;
+       position: relative;
+       transition: all 200ms ease-in;
+       transform: scale(1);
+       cursor: pointer;   
+   }
+   .hoverCards:hover
+   {
+       box-shadow: 0px 0px 150px #000000;
+       z-index: 2;
+       transition: all 200ms ease-in;
+       transform: scale(1.5);
+   }
+
+   /* Box color shuffle Styles */
+   .colorShuffle {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    animation-name: colorShuffle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+   }
+   @keyframes colorShuffle {
+    0%   {background-color: blueviolet;}
+    20%  {background-color: white;}
+    40%  {background-color: rgba(62, 52, 153,1);}
+    60%  {background-color: black;}
+    80%  {background-color: rgba(62, 52, 153,1);}
+    100% {background-color: blueviolet;}
+  }
+
+  /* Text Animation Styles */
+  .textContainer {
+      top: 10%;
+      position: relative;
+      text-align: center;
+  }
+  .textContainer span {
+      text-transform: uppercase;
+      display: block;
+  }
+  .text1 {
+      font-size: 1.5rem;
+      color: blueviolet;
+      animation: text 3s infinite;
+      position: relative;
+      margin-bottom: 5%;
+  }
+  .text2 {
+      color: white;
+      animation: textColor 3s infinite;
+  }
+
+  @keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -10%;
+    }
+    30% {
+        letter-spacing: 10px;
+        margin-bottom: -10%;
+    }
+    85% {
+        letter-spacing: 5px;
+        margin-bottom: -10%;
+    }  
+  }
+  @keyframes textColor {
+        from {
+            color: black;
+        }
+        to {
+            color: white;
+        }
+    }

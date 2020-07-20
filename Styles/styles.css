@@ -11,7 +11,7 @@ header {
     padding: 2% 0;
     background: linear-gradient(89.20667145539016deg, rgba(62, 52, 153,1) 5.391927083333334%,rgba(61, 51, 152,1) 5.391927083333334%,rgba(51, 16, 69,1) 91.90234374999999%);
     box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.712);
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 100;
 }
@@ -51,7 +51,7 @@ nav li {
     background-color: rgb(82, 68, 212);
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1515px) {
    nav {
        width: 50%;
    }
